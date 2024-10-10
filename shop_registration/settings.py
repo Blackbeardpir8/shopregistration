@@ -41,8 +41,9 @@ INSTALLED_APPS = [
 ]
 
 EXTERNAL_APPs = [
-    'shops',
     'rest_framework',
+    'drf_yasg',
+    'shops',
 ]
 
 INSTALLED_APPS = INSTALLED_APPS+EXTERNAL_APPs

@@ -3,6 +3,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 class Shop(models.Model):
     name = models.CharField(max_length=255)
+    
     latitude = models.FloatField(
         validators=[MinValueValidator(-90.0), MaxValueValidator(90.0)]
     )
